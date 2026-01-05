@@ -36,7 +36,7 @@ class Home(View):
             # Save to DB
             ContactMessage.objects.create(
                 name=cd['name'],
-                email=cd['email'],
+                phone=cd['phone'],
                 subject=cd['subject'],
                 message=cd['message']
             )

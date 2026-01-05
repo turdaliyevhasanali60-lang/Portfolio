@@ -6,9 +6,10 @@ class ContactForm(forms.Form):
         widget=forms.TextInput(attrs={'class': 'glass-input', 'placeholder': 'Your Name'}),
         label='Your Name'
     )
-    email = forms.EmailField(
-        widget=forms.EmailInput(attrs={'class': 'glass-input', 'placeholder': 'Your Email'}),
-        label='Your Email'
+    phone = forms.CharField(
+        max_length=20,
+        widget=forms.TextInput(attrs={'class': 'glass-input', 'placeholder': 'Your Phone Number'}),
+        label='Your Phone'
     )
     subject = forms.CharField(
         max_length=150,

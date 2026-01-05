@@ -33,9 +33,9 @@ class TestimonialAdmin(admin.ModelAdmin):
 
 @admin.register(ContactMessage)
 class ContactMessageAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'subject', 'created_at')
+    list_display = ('name', 'phone', 'subject', 'created_at')
     list_filter = ('created_at',)
-    search_fields = ('name', 'email', 'subject', 'message')
+    search_fields = ('name', 'phone', 'subject', 'message')
     readonly_fields = ('created_at',)
 
 @admin.register(Results)
