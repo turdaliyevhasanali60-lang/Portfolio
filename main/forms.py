@@ -8,8 +8,8 @@ class ContactForm(forms.Form):
     )
     phone = forms.CharField(
         max_length=20,
-        widget=forms.TextInput(attrs={'class': 'glass-input', 'placeholder': 'Your Phone Number'}),
-        label='Your Phone'
+        widget=forms.TextInput(attrs={'class': 'glass-input', 'placeholder': 'Phone Number', 'autocomplete': 'tel'}),
+        label='Phone Number'
     )
     subject = forms.CharField(
         max_length=150,
